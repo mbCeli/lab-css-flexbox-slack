@@ -12,100 +12,60 @@ footer links grey: #454245
 body {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: sans-serif;
-}
-/*
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #540b51;
+  font-family: " Font Awesome", sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #540b51;
-
-}
-
-header h1 {
-  width: 80%;
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
-}
-
-header p {
-  width: 80%;
-  color: #fff;
-  font-size: 20px;
-}
-
-header p > span {
-  color: #ecb12f;
-}
-
-header .button {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sign-up-button {
-  background-color: #fff;
-  color: #540b51;
-  font-weight: bold;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  margin-right: 12px;
-  padding: 12px 100px;
-  border-radius: 4px;
-  border: 0;
-}
-
-.google-button {
-  background-color: #4285f4;
-  color: #fff;
-  font-weight: bold;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  padding: 12px 100px;
-  border-radius: 4px;
-  border: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.google-button img {
-  background-color: #fff;
-  width: 15px;
-  border-radius: 4px;
-}
-
-.google-button span {
-  margin-left: 6px;
-}
-
-.header-image {
-  margin-top: 12px;
-}
-
-.header-image img {
-  width: 500px;
-}
-
-
- */
 @media (max-width: 768px) {
   nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #540b51;
+    padding: 20px;
+  }
+
+  .menu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .slack-logo {
+    width: 100px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .actions {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .actions button {
+    width: 20px;
+    background-color: #540b51;
+    border: 0;
+    margin-right: 20px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  .actions img {
+    background-color: #540b51;
+  }
+
+  .actions-list {
+    display: none;
   }
 
   header {
@@ -166,8 +126,8 @@ header .button {
     border-radius: 4px;
     border: 0;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
@@ -175,6 +135,10 @@ header .button {
     background-color: #fff;
     width: 15px;
     border-radius: 4px;
+  }
+
+  .google-button span {
+    margin-left: 3%;
   }
 
   .header-image {
@@ -185,169 +149,223 @@ header .button {
   }
 
   .header-image img {
-    width: 220%;
-    margin-left: 280px;
+    width: 100%;
+    margin-left: 60px;
   }
 
   main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3eae2;
+  }
+  .logos p {
+    width: 80%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 40px auto;
+  }
+
+  .logos div {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .airbnb {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+
+  .nasa {
+    width: 20%;
+    margin-bottom: 40px;
+  }
+
+  .uber {
+    width: 20%;
+    margin-bottom: 40px;
+  }
+
+  .target {
+    width: 15%;
+    margin-bottom: 40px;
+  }
+
+  .nyt {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  .spotify {
+    width: 35%;
+    margin-bottom: 40px;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stats h3 {
+    width: 80%;
+    color: #540b51;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .stats .description {
+    width: 80%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .stats-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 60px auto;
+  }
+
+  .stats-list li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .stats-list li span {
+    color: #540b51;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .stats-list li p {
+    font-weight: bold;
+  }
+
+  .welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #540b51;
+    color: #fff;
+  }
+
+  .welcome h3 {
+    width: 80%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .welcome button {
+    width: 60%;
+  }
+
+  .try {
+    width: 100%;
+    background-color: #fff;
+    color: #540b51;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-right: 0;
+    padding: 12px 50px;
+    border-radius: 4px;
+    border: 0;
+  }
+
+  .talk {
+    width: 100%;
+    color: #fff;
+    background-color: #540b51;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-right: 0;
+    padding: 12px 50px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+  }
+
+  hr {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.footer-info {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.logos {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3eae2;
-
-}
-.logos p { 
-  width: 80%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 40px auto;
-}
-
-.logos div {
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center
-}
-
-.airbnb {
-  width: 30%;
-margin-bottom: 40px;
-}
-
-.nasa {
-  width: 20%;
-  margin-bottom: 40px;
-}
-
-.uber {
-  width: 20%;
-  margin-bottom: 40px;
-}
-
-.target {
-  width: 15%;
-  margin-bottom: 40px;
-}
-
-.nyt {
-  width: 60%;
-  margin-bottom: 40px;
-}
-
-.spotify {
-  width: 35%;
-  margin-bottom: 40px;
-}
-
-.stats {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.stats h3 {
-  width: 80%;
-  color:#540b51;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.stats .description {
-  width: 80%;
-  font-size: 1.3rem;
-  text-align: center;
   margin: 0 auto;
+  padding-left: 20px;
 }
 
-.stats-list {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  list-style-type: none; 
-  padding: 0;
-  margin: 60px auto;
-}
-
-.stats-list li {
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-.stats-list li span {
-  color: #540b51;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.stats-list li p {
+.footer-info li {
+list-style-type: none;
 font-weight: bold;
+margin-bottom: 30px;
 }
 
-.welcome {
+.download {
+  color:#4285f4
+}
+
+.footer-social {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #540b51;
-  color: #fff;
+  margin: 20px auto;
 }
 
-.welcome h3 {
-  width: 80%;
-  font-size: 2.5rem;
+small {
+  width: 90%;
   text-align: center;
-  margin: 40px auto;
-}
-
-.welcome button {
-  width: 60%;
-}
-
-.try {
-  width: 100%;
-  background-color: #fff;
-  color: #540b51;
-  font-weight: bold;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  margin-right: 0;
-  padding: 12px 100px;
-  border-radius: 4px;
-  border: 0;
-}
-
-.talk {
-  width: 100%;
-  color: #540b51;
-  font-weight: bold;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  margin-right: 0;
-  padding: 12px 100px;
-  border-radius: 4px;
-  border: 1px solid #fff;
 }
 
 }

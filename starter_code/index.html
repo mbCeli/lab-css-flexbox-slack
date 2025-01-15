@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- link the Font Awesome stylesheet - CDN -->
-  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" type="text/css"/>
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -19,10 +19,10 @@
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+    <div class="menu">
+      <img src="./images/slack-logo.png" alt="Slack logo" class="slack-logo"/>
 
-      <ul>
+      <ul class="menu-list">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,7 +38,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="actions">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -47,7 +47,7 @@
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="actions-list">
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -137,20 +137,20 @@
 
   </main>
 
+ <hr>
+
   <footer>
-    <ul>
+    <ul class="footer-info">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <li class="region">Change Region</li>
+      <li class="download">Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+    <ul class="footer-social">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -165,7 +165,7 @@
       </li>
     </ul>
 
-    <div>
+    <div class="copyright">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
